@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/09d084e5c7.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <title>flu's website</title>
+
+    <script>
+        $(document).ready(function(){
+
+          $("a").on('click', function(event) {
+
+            if (this.hash !== "0") {
+
+              event.preventDefault();
+
+              var hash = this.hash;
+
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+
+                window.location.hash = hash;
+              });
+            } 
+          });
+        });
+        </script>
+
+</head>
+<body class="sfondo">
+    <div class="titoloContainer" id="prima-finestra">
+    <span class="titolo" >
+        Benvenuto nello Showreel <span class="amvText">AMV</span> di FLU
+    </span>
+  </div>
+    <button class="frecciaGiu"><a href="#seconda-finestra"><i class="fas fa-chevron-down"></i></a></button>
+    
+    <div class="lastAmvContainer" id="seconda-finestra">
+        <span class="lastAmvText">Ultimo AMV Realizzato</span>
+
+    <iframe class="lastAmv" src="https://www.youtube.com/embed/Cd-cV0V02WA?controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+    <button class="frecciaSu"><a href="#prima-finestra"><i class="fas fa-chevron-up"></i></a></button>
+    <button class="frecciaGiuDue"><a href="#terza-finestra"><i class="fas fa-chevron-down"></i></a></button>
+    <div class="playlistAmvContainer" id="terza-finestra">
+      <span class="playlistAmvText">La Playlist Completa</span>
+      <div class="playlistAmv">
+        <div class="playlistAmvChilder">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ug-SzmAJWr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/sHIsIYDvN68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rv77ayH5jt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wVHIu-_I3Y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/qI1zIhGJCUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7nex1XwKycI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/PmVqpqWj8GQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/T_lVykOm5Nw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wK9tCsBIgPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9lSxZ9Vl-XU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    
+  </div>
+  
+  </div>
+  <button class="frecciaSuDue"><a href="#prima-finestra"><i class="fas fa-chevron-up"></i></a></button>
+    </div>
+    <div class="g-ytsubscribe" data-channelid="UCdhiK5Sf8nKSZUIq5szBMAQ" data-layout="full" data-theme="dark" data-count="default"></div>
+   
+    
+</body>
+</html>

@@ -1,0 +1,281 @@
+
+.sfondo{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 1880px;
+    height: 4000px;
+    background: radial-gradient(circle at 50% 0%, rgb(255, 255, 255), rgb(128, 128, 128) 100%, rgb(128, 128, 128) 60%, rgb(128, 128, 128) 75%);
+    scroll-behavior: smooth;
+}
+
+.titoloContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 100.9%;
+    width: 99.7%;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%,-45%);
+}
+.titolo{
+    
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2cm;
+    background-repeat: repeat;
+    background-image: linear-gradient(
+        145deg,
+        #616161 16.666%, 
+        #9b9b9b 16.666%, 
+        #cecece 33.333%, 
+        #ffffff 33.333%, 
+        #ffffff 50%, 
+        #ffffff 50%, 
+        #ffffff 66.666%, 
+        #cecece 66.666%, 
+        #9b9b9b 83.333%, 
+        #616161 83.333%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+        cursor: default;
+}
+.titolo:hover{
+    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+@keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
+.amvText{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2cm;
+    animation: color-animation 3s;
+    animation-iteration-count: 2;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes color-animation{
+    0%{background-color: green;}
+    25% {background-color: yellow;}
+    50% {background-color: red;}
+    75% {background-color: purple;}
+    100%{background-color: blue;}
+}
+
+.frecciaGiu{
+    border: none;
+    position: absolute;
+    bottom: 1%;
+    right:50%;
+    transform: translate(50%,0px,0px,50%);
+    height: auto;
+    width: auto;   
+    cursor: pointer;
+    background-color: white;
+    
+    font-size: 100px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: up-and-down 2s;
+    animation-iteration-count: 2;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.frecciaGiu:hover{ 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: color-animation 3s, up-and-down 2s;
+    animation-iteration-count: 2;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+@keyframes up-and-down{
+    0%{bottom: 0px;}
+    28%{bottom: 50px;}
+    100%{bottom: 0px;}
+}
+
+
+.lastAmvContainer{
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100.4%;
+    top:100.9%;
+    
+}
+
+.lastAmvText{
+    animation: shadow-on-text 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear; 
+    position: absolute;
+    left: 34%;
+    top: 5%;
+    background-color: #616161;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2cm;
+    cursor: default;
+    text-shadow: 0px 0px white
+}
+.lastAmvText:hover{
+    animation: shadow-on-text 3s;
+    cursor: default;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear; 
+}
+@keyframes shadow-on-text{
+    0%{text-shadow: 0px 0px white}
+    100%{text-shadow: 10px 0px darkgrey}  
+}
+
+.lastAmv{
+width: 75%;
+height: 75%;
+position: absolute;
+left: 12%;
+top: 23%;
+}
+.frecciaSu{
+    border: none;
+    position: absolute;
+    top: 170%;
+    right: 3%;
+    height: auto;
+    width: auto;   
+    cursor: pointer;
+    background-color: #616161;
+    font-size: 100px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.frecciaSu:hover{ 
+    background-color: #9b9b9b;
+}
+
+.frecciaGiuDue{
+    border: none;
+    position: absolute;
+    top: 190%;
+    right: 3%;
+    height: auto;
+    width: auto;   
+    cursor: pointer;
+    background-color: #616161;
+    font-size: 100px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.frecciaGiuDue:hover{ 
+    background-color: #9b9b9b;
+}
+
+.playlistAmvContainer{
+    border: solid;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:201%; 
+}
+.playlistAmvText{
+    animation: growText 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear; 
+    position: absolute;
+    left: 34%;
+    top: 5%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2cm;
+    background-color: #616161;
+    cursor: default;
+
+}
+.playlistAmvText:hover{
+    animation: growText 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear; 
+    
+}
+@keyframes growText{
+    0%{font-size: 2cm;}
+    100%{font-size: 2.3cm; right: 3%;}
+}
+
+.playlistAmv{
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.playlistAmvChilder{
+position: absolute;
+top: 20%;
+left: 1%;
+
+}
+.frecciaSuDue{
+    border: none;
+    position: absolute;
+    top: 90%;
+    right: 3%;
+    height: auto;
+    width: auto;   
+    cursor: pointer;
+    background-color: #616161;
+    font-size: 100px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.frecciaSuDue:hover{ 
+    background-color: #9b9b9b;
+}
+
+.g-ytsubscribe{
+justify-items: ba
+
+
+}
